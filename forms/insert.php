@@ -1,4 +1,9 @@
 <?php
+include_once '../db/db.php';
+include_once '../table2/insertTable2Row.php';
+
+$data = ['column1' => 'value1', 'column2' => 'value2', 'column3' => 'value3'];
+$result = insertTable2Row($data);
 if (isset($_POST['submit'])) {
     $servername = "localhost";
     $username = "root";
